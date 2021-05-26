@@ -6,6 +6,7 @@ Starting a new Project
 Installing Express
 - npm install --save express
 
+----------------------------------------
 video 10.- Generating Express App 
 - created a index.js file first - this is our root file 
 - modifying index.js 
@@ -15,6 +16,7 @@ to run the project we used:
 
 Video 11.- Express route handlers
 
+------------------------------------
 Video 13.- Heroku CLI 
 - heroku.com
 - added this to package.json to Heroku to know what versions to use 
@@ -30,7 +32,7 @@ This is also done inside the package.json file in scripts
     "start": "node index.js"
 }
 
-
+-------------------------------------
 Video 14 .- Installing the Heroku cli 
 - heroku cli lo baje desde google buscando heroku cli 
 - para hcer log in usamos : heroku login 
@@ -45,6 +47,14 @@ NOTA: En mi caso
 lo que hice fue desde la pagina de heroku
 pude indicar cual era el branch que yo queria hacer deploy del repositorio de github
 de esta forma es mas sencillo hacerlo sin la necesidad de utilizar heroku cli 
+
+-------------------------------------
+Video 17 .- Intro to Google OAuth
+- we can use this section in any proyect 
+
+-------------------------------------
+Video 18 .- The OAuth Flow
+
 
 
 
