@@ -32,4 +32,11 @@ This is also done inside the package.json file in scripts
 
 
 Video 14 .- Installing the Heroku cli 
+- heroku cli lo baje desde google buscando heroku cli 
+- para hcer log in usamos : heroku login 
+- para crear na app en heroku : heroku create 
+- we are going to see the git link where we need to push our repositori 
+In this case is https://git.heroku.com/fierce-beyond-15410.git
+
+
 
