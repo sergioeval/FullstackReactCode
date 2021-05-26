@@ -55,6 +55,20 @@ Video 17 .- Intro to Google OAuth
 -------------------------------------
 Video 18 .- The OAuth Flow
 
+explicacion de como funciona el flow de la autentication 
+
+-------------------------------------
+Video 19 .- Overview of Passport js
+
+Cuando instlamos passport en realidad estamos instalando 2 lbrerias 
+una es Passport y la otra es passport strategy 
+EN nuestro caso , instalamos la estrategia de google strategy 
+
+This is the passport js webpage. http://www.passportjs.org/packages/
+
+-------------------------------------
+video 20 .- passport setup 
+
 
 
 
