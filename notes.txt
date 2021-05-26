@@ -41,6 +41,11 @@ In this case is https://git.heroku.com/fierce-beyond-15410.git
 
 - y para hacer push del repositorio en mi caso fue: git push heroku sev_dev 
 
+NOTA: En mi caso 
+lo que hice fue desde la pagina de heroku
+pude indicar cual era el branch que yo queria hacer deploy del repositorio de github
+de esta forma es mas sencillo hacerlo sin la necesidad de utilizar heroku cli 
+
 
 
 
