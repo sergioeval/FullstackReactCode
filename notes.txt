@@ -81,6 +81,46 @@ solo explica como obtener los secrets que se explicaron en los pantallazos
 -------------------------------------
 video 24.- Securing API keys 
 
+creating the config folder 
+and the keys.js 
+DO NOT COMMIT THIS FILE 
+
+-------------------------------------
+video 25 .- google strategy options 
+
+------------------------------------
+video 26 .- Testing OAuth 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
