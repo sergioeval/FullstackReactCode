@@ -1,0 +1,16 @@
+Starting a new Project 
+- mkdir server
+- cd server
+- npm init
+
+Installing Express
+- npm install --save express
+
+video 10.- Generating Express App 
+- created a index.js file first - this is our root file 
+- modifying index.js 
+
+to run the project we used: 
+- node index.js
+
+
