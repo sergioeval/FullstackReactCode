@@ -13,4 +13,8 @@ video 10.- Generating Express App
 to run the project we used: 
 - node index.js
 
+Video 11.- Express route handlers
+
+Video 13.- Heroku CLI 
+
 
