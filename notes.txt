@@ -16,5 +16,19 @@ to run the project we used:
 Video 11.- Express route handlers
 
 Video 13.- Heroku CLI 
+- heroku.com
+- added this to package.json to Heroku to know what versions to use 
+"engines": {
+    "node": "14.15.4",
+    "npm": "6.14.10"
+  }
+
+To tell heroku what commands tu use to star the application. 
+This is also done inside the package.json file in scripts
+
+"scripts": {
+    "start": "node index.js"
+}
+
 
 
