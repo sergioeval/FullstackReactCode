@@ -90,22 +90,98 @@ video 25 .- google strategy options
 
 ------------------------------------
 video 26 .- Testing OAuth 
+creating the route to use here. 
+
+--------------------------------
+video 27 .- Authorized redirect URI's
+
+podemos ver que para que la applicacion redireccione correctamente al
+usuario, la url del callback debe estar autoarizada en google cloud 
+si no , nos saldra un error 
+
+--------------------------------
+Video 28 .- Oauth callbacks 
+
+con este eror
+Cannot GET /auth/google/callback
+podemos ver que ahora regresamosa nuestro servidor 
+pero esta url no esta creada todavia 
 
 
+--------------------------------
+video 29.- Access and refresh tokens 
+
+-------------------------------
+Video 30 .- NOdemon setup 
+esto es para no tener que estar reseteando el server cada vez que hacemos 
+cambios. 
+Para instalarlo : npm install --save nodemon
+
+despues hicimos este cambio en package.json
+en la parte de scripts , agregamos 
+"dev": "nodemon index.js"
+
+Enotonces ahora para correr el proyecto en development lo hacemos con: 
+- npm run dev
+
+-------------------------------
+video 31.- Server Structure Refactor
+
+Refactoring our code 
+
+-------------------------------
+Video 32 .- The Theory of Authentication
+
+Token is going to be useful for use to 
+create the cokie base authentication 
+
+-------------------------------
+Video 33.- Signing in users with OAuth
+
+-------------------------------
+Video 34 .- Introduction to MongoDB
+
+-------------------------------
+Video 35.- MongoDB atlas Setup and Configuration
+
+Mongodb example 
 
 
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://sergio:<password>@emaily.7zwk1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+user:sergio
+pass:sevalfabeta
 
 
+---------------------------------------
+Video 36.- Mlab setup 
+Pero esto ya lo tenia configurado en mongo atlas ya que Mlab ya no existe
+
+---------------------------------------
+
+Video 37.- Mongoose connect Update
+
+Change your connect method to look like this:
+
+mongoose.connect(keys.mongoURI, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  });
 
 
+-------------------------------------
 
+Video 38.- Connecting mongoose to mongo
 
-
-
-
-
-
-
+To install mongoose we did >> npm install --save mongoose
 
 
 
