@@ -156,8 +156,6 @@ client.connect(err => {
   client.close();
 });
 
-user:sergio
-pass:sevalfabeta
 
 
 ---------------------------------------
