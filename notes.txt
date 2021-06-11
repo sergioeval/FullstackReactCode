@@ -198,6 +198,62 @@ that is why we need the schema property
 -----------------------------------------
 Video 41 .- Saving model instances
 
+-----------------------------------
+Video 43 .- Mongoose Queries 
+
+Funcion para encontrar un record y agregar si no existe in
+
+User.findOne({
+				googleId: profile.id,
+			}).then(function (existingUser) {
+				if (existingUser) {
+					//we already have a record with the given id
+				} else {
+					// we dont have it , crete a new record
+					new User({ googleId: profile.id }).save();
+				}
+			});
+
+----------------------------------------
+Video 44 .- Passport Callbacks 
+
+------------------------------
+Video 45.- Enconding Users 
+
+es para proporcionar el token indentificador de cada usuario 
+este token se mantendra durante toda la sesion 
+
+se crearon las funciones para hacer el serializado y des-serealizado del user 
+
+------------------------
+Video 46.- Deserialize User 
+
+------------------------
+Video 47.- Enabling cookies
+
+npm install --save cookie-session 
+Para tener instalado el tema de las cookies ya que 
+express no sabe como manejar eso 
+
+-------------------------
+Video 48.- Testing authentication
+
+we just aded code to the authRoutes.js file 
+
+-----------------------------
+video 49.- Loggin out users 
+
+modifiying the authRoutes file with the loggout 
+
+----------------------
+video 50 optional - Deeper Dive 
+
+middleware - are small functions that can be use to modify incomming request before they are sent out to route handdlers 
+
+----------------------------------
+SESION 5: dev vs prod environments 
+video 51 .- dev vs prod keys 
+
 
 
 

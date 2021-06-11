@@ -11,4 +11,16 @@ module.exports = function (app) {
 
 	// video 28
 	app.get("/auth/google/callback", passport.authenticate("google"));
+
+	// video 49.- logging out users 
+	app.get('/api/logout', function(req, res){
+		req.logout();
+		return res.send(req.user)
+	});
+
+
+	// just to see what user is authenticated 
+	app.get('/api/current_user', function(req, res) {
+		return res.send(req.user);
+	});
 };
