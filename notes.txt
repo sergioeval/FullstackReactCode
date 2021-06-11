@@ -1,4 +1,5 @@
 Starting a new Project 
+
 - mkdir server
 - cd server
 - npm init
@@ -181,21 +182,21 @@ Video 38.- Connecting mongoose to mongo
 
 To install mongoose we did >> npm install --save mongoose
 
+------------------------------------
 
+Video 39.- Breather and review
 
+--------------------------------
+Video 40.- Mongoose model classes
 
+Creating the Models folder and the user.js file 
+Here we are going to create our mongoose model class 
 
+mongoose want to know all the fields of a document 
+that is why we need the schema property 
 
-
-
-
-
-
-
-
-
-
-
+-----------------------------------------
+Video 41 .- Saving model instances
 
 
 
