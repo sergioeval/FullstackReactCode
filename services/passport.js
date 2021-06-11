@@ -1,9 +1,19 @@
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
+const mongoClient = require('mongodb').MongoClient;
 const keys = require("../config/keys"); // modificado en video 31
 
-const User = mongoose.model('users');
+//const User = mongoose.model('users');
+
+const client = new mongoClient(
+		keys.mongoURI, {
+		useNewUrlParser: true, 
+		useUnifiedTopology: true
+	}
+);
+
+//const db = client.connect().db('dev').collection('users')
 
 
 passport.use(

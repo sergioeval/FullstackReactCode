@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 //const Schema = mongoose.Schema;
-const {Schema} = mongoose; // this is the same as the one up we are going to be using this sintax
-
+//const {Schema} = mongoose; // this is the same as the one up we are going to be using this sintax
+/*
 const userSchema = new Schema({
 	googleId: String
 })
@@ -10,4 +10,4 @@ const userSchema = new Schema({
 // it will not be deleted , it will just use the same collection a
 // already created 
 mongoose.model('users', userSchema);
-
+*/

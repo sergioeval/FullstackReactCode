@@ -1,19 +1,33 @@
 const express = require("express");
-const mongoose = require('mongoose')
-const keys = require('./config/keys')
-require('./models/User')
+const MongoClient = require("mongodb").MongoClient;
+const keys = require("./config/keys");
+//require('./models/User')
 require("./services/passport");
 
+const client = new MongoClient(keys.mongoURI, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+});
 
-mongoose.connect(keys.mongoURI,
+client.connect(function (err) {
+	if (err) {
+		console.log(err);
+	} else {
+		const collection = client.db("dev").collection("users");
+		// perform collection actions
+		client.close();
+	}
+});
+
+/*
+mongoose.connect(teys.mongoURI,
 	{
 		useNewUrlParser: true,
 		useCreateIndex: true,
 		useUnifiedTopology: true
 	}
 );
-
-//mongoose.connect(keys.mongoURI)
+*/
 
 const app = express();
 
