@@ -255,6 +255,139 @@ SESION 5: dev vs prod environments
 video 51 .- dev vs prod keys 
 
 
+---------------------------------
+------------------ CRETING THE REACT APP ------------------------------
+
+
+Section 6: moving to the client side
+video 58.- npx Create React App Generation
+
+To better install react we just do this: 
+npx create-react-app client 
+esto creo una carpeta llamada client , creo que aqui es donde se instalo todo 
+
+esto lo hice en la carpeta principal del server
+
+
+Estando en la carpeta de Client
+corremos npm start
+para inicial el server de react 
+
+react has its own server 
+
+----------------------------------------------------
+Video 61.- Running client and server 
+
+first we modified the json file in the server 
+Now the scripts look like this: 
+
+"scripts": {
+		"start": "node index.js",
+		"server": "nodemon index.js",
+		"client":"npm run start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	}
+
+Tambien instalamos concurrently de esta forma
+>> npm install --save concurrently
+
+--------------------------------------------------------
+Video 62.- Important create react app proxy update 
+
+we need to go to the client directory 
+we need to install the http-proxy-middleware libreay 
+we need to install the newest one fom version 1
+https://github.com/chimurai/http-proxy-middleware/releases
+
+1.3.1 is the newest in this case 
+
+>> npm install http-proxy-middleware@1.3.1
+
+***Do not add changeOrigin: true to your proxy script, it will completely break our redirects!***
+
+Make sure you don't add the proxy configuration to the package.json file as shown in the video lectures. If you do, you'll get the following error:''
+
+-----------------------------------------------------
+Video 63.- Routing stumbling block
+
+-----------------------------------------
+Video 64 .- The beauty of create react app's proxy
+
+aqui para arreglar el problema agregamos en la consola de google la siguiente liga tambien 
+lo hicimos en el proyecto de development solamente por el momento
+http://localhost:3000/auth/google/callback
+
+-------------------------------------------
+Video 65.- Why this arquitecture
+
+se seleccionop este tipo de arquitectura 
+por el hecho de que estamos usando un loog in usando cookies 
+
+
+------------------------------------------
+SECTION 7 : DEVELOPIING THE CLIENT SIDE 
+
+video 66.- async/await siyntax 
+
+
+
+
+-------------------------------------
+Video 69 .- Front end Tech 
+
+----------------------------------
+video 70.- Installing root modules 
+
+He will delete all the files in the clien/src folder
+but we didn't delete the proxy one. 
+
+to install things for react we need to do everything in the cient folder 
+we will install this components:
+>> npm install --save redux react-redux react-router-dom 
+
+empezamos a crear el archivo index.js de react src 
+
+----------------------------------------------------
+Video 71.- Installing root modules
+
+--------------------------------------------
+Video 72 .-  Trobleshooting NPM 
+
+Yo no tenia ningun error 
+pero el lo suluciono 
+Borrando el file package-lock.json
+y despues corriendo el comando
+>> npm install 
+en la carpeta de client. 
+
+
+-------------------------------
+Video 73.- Redux review and setup 
+
+in this section we modified information in the client/src index file and App file also 
+
+------------------------------------
+Video 74.-  finishing the reducer setup 
+
+----------------------------------
+Video 77.- React router setup 
+
+--------------------------------
+Video 81.- Materialize CSS
+
+In this video we saw that the best way source for 
+css code and give a good look to our page is in the web page 
+materializecss.com
+
+Materialize csss can be installed in the project 
+----------------------------------
+ Video 85 .- additional proxy rules 
+
+ instaling axios 
+ >> npm install --save axios redux-thunk
+
+
+
 
 
 
