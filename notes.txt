@@ -387,6 +387,72 @@ Materialize csss can be installed in the project
  >> npm install --save axios redux-thunk
 
 
+------------------------------
+Video 86 .- Basics of redux thunk 
+
+
+----------------------------
+Video 100.- Exploring Stripe API 
+
+We are going to use Stribe checkout 
+to show a credict card form to our users 
+We are going to user stribe checkout react in this case 
+If we do a google search for stribe checkout react we are going to find the github for 
+this library by azmenak/react-stribe-checkout
+
+to install this library 
+>> npm install --save react-stripe-checkout
+
+
+-----------------------
+Video 101.- stripe API keys 
+
+We created the keys in config/dev.js and config/prod.js  
+We also added the stripe keys in the Heroku envionment variables 
+
+-----------------------------------
+Video 102.- Env Variables with React 
+
+Nos dimos cuenta que en el front end estamos usando un sistema de modulos diferente (using import instead of require)
+Este sistema de modulos no se puede insertar en una logica para decidir si importamos un archivo cuando estamos en prod 
+o importamos otro cuando estamos en dev. 
+
+Para poder usar el manejo de keys en el front end lo que haremos es
+una solucion que ya viene con create-react-app 
+
+create-react-app environemnt variables
+adding custom environment variables
+
+lo que hacemos es crear las env variables en nuestra maquina 
+las variables deben comenzar con REACT_APP_ 
+
+por el hecho de que todos podemos estar usando diferentes OS 
+lo que haremos es definir un archivo .env para las variables que necesitamos 
+este file debe estar en el root del proyecto 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
