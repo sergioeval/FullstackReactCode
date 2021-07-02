@@ -5,4 +5,3 @@ config/dev.js
 test_not_submit.js
 
 client/.env.development
-client/.env.production
