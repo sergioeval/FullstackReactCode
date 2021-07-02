@@ -431,8 +431,72 @@ lo que haremos es definir un archivo .env para las variables que necesitamos
 este file debe estar en el root del proyecto 
 
 
+the files are going to be created inside the client directory 
+
+---------------------------------------------------
+
+Video 103.- The Payments Component 
+
+ by default stripe is using US dollars 
+Also is using cents , so if we want 5 dollars , we put 500 
+The option "token" is expecting to receive a call back function 
+from the stripe api , is like an authorization token from stripe api 
+
+------------------------------------------
+Video 104.- Stripe Tokens 
+
+--------------------------------------
+video 105.- Payments fixes 
 
 
+------------------------------
+Video 106.- Reusing Action Types 
+
+
+---------------------------------
+video 107 .- Posting the stripe token 
+
+------------------------------
+Video 108 .- Post request handler 
+
+
+-------------------------------
+Video 109.- Creating Charges 
+
+vimos algo de documentacion de el modulo que usaremos aqui , en el back end , que tambien es un modulo de stripe . 
+
+en npmjs.com buscamos stripe packages 
+
+this is a lib for node 
+
+fuimos a node api docs 
+
+para crear un cargo en stripe debemos regresar a stripe el charge object que dice en la documentacion 
+
+intalamos la libreria de stripe para nodejs 
+
+>> npm install --save stripe
+
+-------------------------------------
+
+Video 110.- Body Parser 
+
+ we need to use a body parser so the object from hthe front end is available in the node application 
+
+instalamos cn npm in the server 
+>> npm install --save body-parser
+
+este elemento lo requerimos en el index js del server 
+
+despues solo agregamos app.use(bodyParser.json())
+
+y de esta forma todo el request sera parseado en los request 
+
+-------------------------
+Video 113.- Adding credeits to a user 
+
+--------------------
+video 114.- Requiring authentication 
 
 
 
