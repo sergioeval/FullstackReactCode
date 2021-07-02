@@ -499,7 +499,21 @@ Video 113.- Adding credeits to a user
 video 114.- Requiring authentication 
 
 
+-------------------------------
+Video 121 .- Adding in a heroku build step 
 
+Vimos que tuvimos que hacer algunos cambios en el index js root 
+Para que podamos correr el proyecto en heroku 
+pero tamben debemos configurar algunas cosas para que heroku haga el build del proyecto en el servidor sin que 
+nosotros lo hagamos en la maquina local 
+
+Visitamos l apagina de Heroku Node.js support para encontrar esta informacion 
+
+Customizing the build process 
+para modificar el package.json file 
+
+
+haremos lo de heroku-postbild 
 
 
 
